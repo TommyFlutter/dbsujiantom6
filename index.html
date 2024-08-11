@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Notes App</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wghtq0,100;0"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet"href="./src/styles/main.css"/>
+    <link rel="stylesheet"href="./src/styles/reset.css"/>
+    
+</head>
+<body>
+    <header>
+        <h1> Note Apps</h1>
+    </header>
+    <main>
+        <form class="form">
+            <div class="form__group">
+                <label for ="title" class="form__label">Judul</label>
+                <input id="title"
+                title= "title"
+                type= "text"
+                placeholder = "e.g. Welcome to note!"
+                />
+            </div>
+
+            <div class="form__group">
+                <label for ="body" class="form__label">Isi</label>
+                <input
+                id="body"
+                body="body"
+                type="text"
+                placeholder="e.g This is your first Note"
+                />
+            </div>
+
+            <div>
+                <input 
+                id="archived"
+                archived="archived"
+                type="checkbox"
+                />
+                <label for="archieved">
+                    Mark as archive</label>
+            </div>
+            <button class="form__submit">
+                Add to Note </button>
+        </form>
+
+    <section class="notes">
+        <h2>Archived</h2>
+        <ul class="notes__list notes__list--archive"></ul>
+    </section>
+
+    <section class="notes">
+        <h2>NotArchived</h2>
+        <ul class="notes__list notes__list--notarchive"></ul>
+    </section>
+
+</main>
+<script src="./script.js"></script>
+   
+    </body>
+</html>
+
+
