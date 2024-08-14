@@ -16,15 +16,19 @@
     
 </head>
 <body>
-    <header>
-        <h1> Note Apps</h1>
+    <header class="head_bar">
+        <h1 class="head_bar_title"> Note Apps</h1>
+        <p
+        class="head_bar_desc">
+    welcome, senang bertemu dengan anda
+ada yang bisa kami bantu ? ayo mencatat</p>
     </header>
     <main>
         <form class="form">
             <div class="form__group">
                 <label for ="title" class="form__label">Judul</label>
                 <input id="title"
-                title= "title"
+                name= "title"
                 type= "text"
                 placeholder = "e.g. Welcome to note!"
                 />
@@ -34,7 +38,7 @@
                 <label for ="body" class="form__label">Isi</label>
                 <input
                 id="body"
-                body="body"
+                name="body"
                 type="text"
                 placeholder="e.g This is your first Note"
                 />
@@ -43,10 +47,10 @@
             <div>
                 <input 
                 id="archived"
-                archived="archived"
+                name="archived"
                 type="checkbox"
                 />
-                <label for="archieved">
+                <label for="archived">
                     Mark as archive</label>
             </div>
             <button class="form__submit">
@@ -64,6 +68,11 @@
     </section>
 
 </main>
+<footer>
+    <h3>Created By
+        <a>TommyScientists</a>
+    </h3>
+</footer>
 <script src="./script.js"></script>
    
     </body>
